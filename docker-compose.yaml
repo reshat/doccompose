@@ -3,7 +3,7 @@ services:
   FRE:
     image: reshatsultan/hospital-frontend:latest
     ports:
-      - "3005:8080"
+      - "3000:8080"
   API:
     image: reshatsultan/hospital:latest
     ports:
