@@ -11,7 +11,7 @@ services:
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://PostgreSQL:5432/hospital
       - SPRING_DATASOURCE_USERNAME= postgres
-      - SPRING_DATASOURCE_PASSWORD= secret123456
+      - SPRING_DATASOURCE_PASSWORD= 123456
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
 
   PostgreSQL:
@@ -23,7 +23,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_PASSWORD= secret123456
+      - POSTGRES_PASSWORD= 123456
       - POSTGRES_USER= postgres
       - POSTGRES_DB=hospital
     healthcheck:
